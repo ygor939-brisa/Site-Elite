@@ -1,0 +1,94 @@
+/* Elite Softwares – estilos complementares ao Tailwind */
+:root{
+  --bg:#070A09; --bg2:#0B100E; --tx:#EEF3EF; --mute:#8F9A94; --line:rgba(255,255,255,.1); --ok:#2BE37A;
+  --matrix:#2BE37A; --dark:#0a0a0a;
+  color-scheme:dark;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+html{scroll-padding-top:calc(4.5rem + env(safe-area-inset-top,0px))}
+*,*::before,*::after{box-sizing:border-box}
+:focus-visible{outline:2px solid var(--matrix);outline-offset:3px;border-radius:8px}
+::selection{background:var(--matrix);color:#04140b}
+.text-ok{color:var(--ok)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--dark);z-index:40}
+
+/* ---------- Header ---------- */
+#top.scrolled{background:rgba(10,10,10,.78);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom-color:rgba(255,255,255,.1)}
+
+/* ---------- Hero ---------- */
+#rain{opacity:.55}
+.hero-shade{background:
+  radial-gradient(ellipse 62% 52% at 50% 50%,rgba(10,10,10,.9),rgba(10,10,10,.4) 70%,transparent),
+  linear-gradient(180deg,rgba(10,10,10,.75),transparent 28%)}
+.caret{display:inline-block;width:.55em;height:1em;margin-left:.12em;background:var(--matrix);vertical-align:-.12em;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+#heroSub{transition:opacity .9s ease,transform .9s ease}
+
+/* ---------- Botões (compactos, em pílula) ---------- */
+.btn,.btn-ghost{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;border-radius:999px;font-weight:600;font-size:.9rem;line-height:1;text-decoration:none;cursor:pointer;transition:all .3s ease;padding:.65rem 1.15rem}
+.btn{background:var(--matrix);color:#04140b;box-shadow:0 8px 24px -10px rgba(43,227,122,.7)}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.08);box-shadow:0 12px 30px -10px rgba(43,227,122,.9)}
+.btn-ghost{border:1px solid rgba(255,255,255,.3);color:#fff}
+.btn-ghost:hover{border-color:rgba(255,255,255,.7);background:rgba(255,255,255,.07)}
+.btn-md{padding:.8rem 1.5rem;font-size:.95rem}
+
+/* ---------- Linhas e blocos ---------- */
+.row{display:grid;gap:.4rem 2rem;padding:1.3rem 0;border-bottom:1px solid var(--line);font-size:1.05rem}
+.row p{margin:0}
+.row p:first-child{color:var(--mute)}
+.row p:last-child{font-weight:500}
+.sol{display:grid;gap:.3rem 2rem;padding:1.4rem 0;border-bottom:1px solid var(--line)}
+.sol dt{font:700 1.15rem "Chakra Petch","Trebuchet MS",sans-serif;transition:color .3s}
+.sol dd{margin:0;color:var(--mute);line-height:1.6}
+.sol:hover dt{color:var(--ok)}
+@media (min-width:768px){.sol{grid-template-columns:.8fr 1.2fr}}
+.step{background:linear-gradient(160deg,rgba(255,255,255,.055),rgba(255,255,255,.015));border:1px solid var(--line);border-radius:1rem;padding:1.5rem;box-shadow:inset 0 1px 0 rgba(255,255,255,.07);transition:border-color .3s,transform .3s,box-shadow .3s}
+.step:hover{border-color:rgba(43,227,122,.6);transform:translateY(-3px);box-shadow:inset 0 1px 0 rgba(255,255,255,.1),0 0 42px -12px rgba(43,227,122,.5)}
+.step h3{margin:.7rem 0 .4rem;font:700 1.15rem "Chakra Petch","Trebuchet MS",sans-serif}
+.step p:last-child{margin:0;color:var(--mute);line-height:1.6}
+
+/* ---------- FAQ ---------- */
+.faq{border-bottom:1px solid var(--line)}
+.faq summary{display:flex;align-items:center;justify-content:space-between;gap:1rem;cursor:pointer;list-style:none;padding:1.2rem 0;font-size:1.05rem;font-weight:600;transition:color .3s}
+.faq summary:hover{color:var(--ok)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary i{flex:none;color:var(--ok);transition:transform .3s}
+.faq[open] summary i{transform:rotate(45deg)}
+.faq[open] summary{color:var(--ok);text-shadow:0 0 18px rgba(43,227,122,.4)}
+.faq p{margin:0;padding:0 2rem 1.3rem 0;color:var(--mute);line-height:1.7}
+
+/* ---------- CTA final ---------- */
+.cta-glow{background:radial-gradient(600px 260px at 50% 110%,rgba(43,227,122,.18),transparent 70%)}
+
+/* ---------- WhatsApp flutuante ---------- */
+.wa-float{position:fixed;right:1rem;bottom:calc(1rem + env(safe-area-inset-bottom,0px));z-index:45;display:grid;place-items:center;width:3.2rem;height:3.2rem;border-radius:999px;background:var(--matrix);color:#04140b;box-shadow:0 10px 30px -8px rgba(43,227,122,.8);transition:transform .3s}
+.wa-float:hover{transform:scale(1.08)}
+
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* ================= Tema escuro com brilho ================= */
+.tag{display:inline-block;margin-bottom:.9rem;font:500 .8rem "JetBrains Mono",ui-monospace,monospace;color:var(--ok);text-shadow:0 0 14px rgba(43,227,122,.65)}
+.chip{display:inline-flex;align-items:center;gap:.55rem;margin:0 0 1.4rem;padding:.38rem .9rem;border:1px solid rgba(43,227,122,.35);border-radius:999px;background:rgba(43,227,122,.07);font:500 .75rem "JetBrains Mono",ui-monospace,monospace;color:#9DFFC6;box-shadow:0 0 30px -10px rgba(43,227,122,.6)}
+.chip .dot{width:.5rem;height:.5rem;border-radius:50%;background:var(--matrix);box-shadow:0 0 10px var(--matrix);animation:pulse 1.8s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.35;transform:scale(.8)}}
+#typed{text-shadow:0 0 30px rgba(43,227,122,.4)}
+
+/* Hero: grade técnica + brilho verde na base */
+#inicio{box-shadow:inset 0 -90px 110px -70px rgba(43,227,122,.22);border-bottom:1px solid rgba(43,227,122,.3)}
+#inicio::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(rgba(43,227,122,.055) 1px,transparent 1px) 0 0/48px 48px,linear-gradient(90deg,rgba(43,227,122,.055) 1px,transparent 1px) 0 0/48px 48px;-webkit-mask-image:radial-gradient(ellipse at 50% 50%,#000 20%,transparent 75%);mask-image:radial-gradient(ellipse at 50% 50%,#000 20%,transparent 75%)}
+#inicio>.relative{z-index:1}
+
+/* Demais seções: grade sutil, brilho de canto e linha de luz no topo */
+main section:not(#inicio):not(#contato){position:relative;overflow:hidden;--gx:12%}
+main section:nth-of-type(even):not(#inicio):not(#contato){--gx:88%}
+main section:not(#inicio):not(#contato)::before{content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(560px 280px at var(--gx) 0%,rgba(43,227,122,.12),transparent 70%),
+             linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px) 0 0/44px 44px,
+             linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px) 0 0/44px 44px;
+  -webkit-mask-image:linear-gradient(180deg,#000,transparent 88%);mask-image:linear-gradient(180deg,#000,transparent 88%)}
+main section:not(#inicio)::after{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(43,227,122,.55),transparent)}
+main section:not(#inicio):not(#contato)>*{position:relative;z-index:1}
+.cta-glow{background:radial-gradient(640px 280px at 50% 115%,rgba(43,227,122,.3),transparent 70%),radial-gradient(420px 200px at 50% 0%,rgba(43,227,122,.08),transparent 70%)}
+.btn{box-shadow:0 0 0 1px rgba(43,227,122,.5),0 10px 34px -8px rgba(43,227,122,.85)}
