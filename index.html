@@ -1,162 +1,121 @@
-<!DOCTYPE html>
-<html lang="pt-BR" class="scroll-smooth">
+<!doctype html>
+<html lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Elite Softwares – Software sob medida para a sua operação</title>
-<meta name="description" content="Entendemos o que está consumindo tempo e dinheiro na sua operação e construímos o sistema que resolve. Elite Softwares.">
-<meta name="theme-color" content="#070A09">
-<meta property="og:title" content="Elite Softwares">
-<meta property="og:description" content="Software sob medida para reduzir erros, ganhar tempo e aumentar o lucro.">
-<link rel="icon" type="image/png" href="img/favicon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Hanken+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com/3.4.17"></script>
-<script>
-/* Cores e fontes da marca: troque aqui */
-tailwind.config={theme:{extend:{
-  colors:{bg:'var(--bg)',bg2:'var(--bg2)',tx:'var(--tx)',mute:'var(--mute)',line:'var(--line)',matrix:'#2BE37A'},
-  fontFamily:{head:['"Chakra Petch"','"Trebuchet MS"','system-ui','sans-serif'],body:['"Hanken Grotesk"','"Segoe UI"','system-ui','sans-serif'],mono:['"JetBrains Mono"','ui-monospace','Consolas','monospace']}
-}}};
-</script>
-<link rel="stylesheet" href="css/custom.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>Elite Softwares — Sistemas sob medida</title>
+  <meta name="description" content="Transformamos processos manuais em sistemas claros, integrados e feitos para a operação da sua empresa.">
+  <meta name="theme-color" content="#0d0c11">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300..700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0d0c11;--ink:#fff;--muted:#d3d3d7;--grey:#b9b8bb;--teal:#9ff0ec;--violet:#6f5adc;--line:rgba(255,255,255,.16);--glass:rgba(255,255,255,.025);--ease:cubic-bezier(.22,1,.36,1);color-scheme:dark}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;overflow-x:hidden}button,a{font:inherit}a{color:inherit;text-decoration:none}:focus-visible{outline:2px solid var(--teal);outline-offset:4px}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;background:linear-gradient(rgba(255,255,255,.026) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.026) 1px,transparent 1px);background-size:42px 42px;mask-image:radial-gradient(circle at 65% 50%,#000,transparent 78%)}
+    .shell{position:relative;min-height:100svh;overflow:hidden}.orb{position:absolute;width:62vw;height:62vw;right:-18vw;top:-25vw;border-radius:50%;background:radial-gradient(circle,rgba(87,43,188,.18),transparent 68%);filter:blur(40px);pointer-events:none}
+    header{height:104px;max-width:1500px;margin:auto;padding:22px 48px;display:flex;align-items:center;gap:34px;position:relative;z-index:10}.brand{display:flex;align-items:center;gap:13px;min-width:max-content}.mark{width:48px;height:48px;display:grid;place-items:center;border:1px solid rgba(255,255,255,.2);border-radius:13px;background:linear-gradient(145deg,#42159c,#745ee4);box-shadow:0 0 34px rgba(111,90,220,.34)}.mark img{width:34px;height:34px;object-fit:contain;filter:brightness(0) invert(1)}.word{font:500 21px 'DM Sans';letter-spacing:-.04em;color:#d5d4d8}.word sup{color:var(--teal);font:600 9px Inter;letter-spacing:.08em;margin-left:4px;vertical-align:super}
+    nav{display:flex;align-items:center;justify-content:center;gap:30px;margin:auto;color:var(--grey);font-size:13px}nav a{transition:.25s}nav a:hover{color:#fff}.actions{display:flex;align-items:center;gap:22px;font-size:13px}.glass,.btn-secondary{border:1px solid var(--line);background:var(--glass);box-shadow:inset 0 1px rgba(255,255,255,.08);backdrop-filter:blur(10px) brightness(1.15) saturate(.8)}.nav-cta{padding:15px 23px;border-radius:999px}.menu,.mobile-nav{display:none}.menu{width:46px;height:46px;border-radius:50%;color:#fff}.menu span,.menu:before,.menu:after{content:"";display:block;width:17px;height:1px;background:currentColor;margin:5px auto;transition:.3s}
+    .hero{max-width:1500px;margin:auto;min-height:calc(100svh - 104px);padding:5vh 48px 36px;display:grid;grid-template-columns:minmax(460px,.9fr) minmax(620px,1.1fr);align-items:center;position:relative;z-index:2}.copy{position:relative;z-index:3;padding-left:2vw}.eyebrow{display:flex;align-items:center;gap:10px;color:var(--teal);font-size:12px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:22px}.eyebrow:before{content:"";width:28px;height:1px;background:var(--teal);box-shadow:0 0 10px var(--teal)}
+    h1{font:380 clamp(58px,5.1vw,88px)/.98 'DM Sans';letter-spacing:-.065em;margin:0;max-width:730px}.line{display:block;overflow:hidden}.line>span{display:block;background:linear-gradient(90deg,#fff 44%,#bbb9c4);background-clip:text;color:transparent}.sub{font-size:clamp(16px,1.3vw,20px);font-weight:300;line-height:1.6;color:var(--muted);max-width:610px;margin:28px 0 32px}.buttons{display:flex;gap:13px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-width:180px;padding:18px 26px;border-radius:999px;font-weight:560;font-size:14px;transition:.3s}.btn-primary{background:linear-gradient(105deg,#4d19b1,#6f5adc);box-shadow:0 12px 45px rgba(92,56,201,.3)}.btn:hover{transform:translateY(-2px);filter:brightness(1.12)}
+    .stats{display:flex;align-items:center;margin-top:40px}.stat{padding:0 28px;border-left:1px solid var(--line)}.stat:first-child{padding-left:0;border:0}.stat strong{display:block;font:430 29px 'DM Sans';letter-spacing:-.05em}.stat small{display:block;color:#929198;font-size:11px;margin-top:4px}
+    .visual{position:relative;min-height:670px;margin-left:-6vw}.media{position:absolute;width:min(68vw,840px);aspect-ratio:1;left:48%;top:47%;transform:translate(-50%,-50%);mask-image:radial-gradient(circle,#000 42%,rgba(0,0,0,.82) 61%,transparent 76%)}.media video,.media img{width:100%;height:100%;object-fit:cover}.media img{display:none}.card{position:absolute;width:340px;padding:18px;border-radius:18px;display:grid;grid-template-columns:52px 1fr;gap:15px;align-items:center}.card-a{top:17%;left:1%}.card-b{right:1%;bottom:15%}.icon{width:52px;height:52px;border-radius:13px;display:grid;place-items:center;color:var(--teal);background:rgba(159,240,236,.06);border:1px solid rgba(159,240,236,.25)}.icon svg{width:26px;height:26px}.card small{color:#bdf7ee;font-size:10px;letter-spacing:.12em;text-transform:uppercase}.card h2{font:500 14px/1.35 Inter;margin:5px 0 0}.logos{position:absolute;left:50%;bottom:25px;transform:translateX(-50%);display:flex;align-items:center;gap:clamp(28px,4vw,70px);color:#aaa9af;white-space:nowrap;font:450 13px 'DM Sans';letter-spacing:.02em}.logos b{font-size:16px;font-style:italic}.logos span:nth-child(3){letter-spacing:.24em}.logos span:nth-child(4){font-weight:700;font-style:italic;letter-spacing:.1em}
+    .content{position:relative;z-index:2}.section{padding:120px 48px}.wrap{width:min(1240px,100%);margin:auto}.kicker{display:flex;align-items:center;gap:10px;color:var(--teal);font-size:11px;letter-spacing:.14em;text-transform:uppercase}.kicker:before{content:"";width:22px;height:1px;background:var(--teal)}.section-head{display:grid;grid-template-columns:1.1fr .7fr;gap:60px;align-items:end;margin:22px 0 58px}.section-head h2{font:390 clamp(42px,5vw,72px)/1 'DM Sans';letter-spacing:-.055em;margin:0}.section-head p{color:#aaa9b0;line-height:1.75;margin:0}.services{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}.service{min-height:250px;padding:30px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:linear-gradient(145deg,rgba(255,255,255,.025),transparent);transition:.35s}.service:hover{background:rgba(111,90,220,.07);transform:translateY(-3px)}.service-no{color:#777680;font:500 12px 'DM Sans'}.service h3{font:500 21px 'DM Sans';margin:48px 0 12px}.service p{font-size:14px;color:#9b9aa2;line-height:1.65;margin:0}.service svg{width:26px;color:var(--teal);float:right}
+    .portfolio{background:#0a090e;border-block:1px solid rgba(255,255,255,.08)}.projects{display:grid;gap:26px}.project{min-height:520px;border:1px solid var(--line);border-radius:28px;overflow:hidden;display:grid;grid-template-columns:.8fr 1.2fr;background:linear-gradient(135deg,rgba(255,255,255,.035),rgba(255,255,255,.01))}.project:nth-child(even){grid-template-columns:1.2fr .8fr}.project:nth-child(even) .project-copy{order:2}.project-copy{padding:55px;display:flex;flex-direction:column;justify-content:center}.project-tag{color:var(--teal);font-size:10px;letter-spacing:.14em;text-transform:uppercase}.project h3{font:430 clamp(30px,3.5vw,48px)/1.08 'DM Sans';letter-spacing:-.045em;margin:18px 0}.project p{color:#aaa9b0;line-height:1.75;margin:0 0 28px}.chips{display:flex;gap:8px;flex-wrap:wrap}.chips span{border:1px solid var(--line);border-radius:999px;padding:8px 12px;font-size:10px;color:#c4c3c9}.mock{position:relative;min-height:460px;margin:28px;background:#111017;border:1px solid rgba(255,255,255,.1);border-radius:20px;overflow:hidden;box-shadow:0 35px 80px rgba(0,0,0,.35)}.mock:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 85% 10%,rgba(111,90,220,.25),transparent 38%),linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:auto,32px 32px,32px 32px}.mock-top{height:52px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:7px;padding:0 18px}.mock-top i{width:7px;height:7px;border-radius:50%;background:#55545d}.mock-body{position:relative;padding:24px;display:grid;gap:18px}.metric-row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.metric,.chart,.flow-card{border:1px solid rgba(255,255,255,.1);border-radius:13px;background:rgba(255,255,255,.025);padding:16px}.metric small{font-size:9px;color:#818089}.metric strong{display:block;font:500 23px 'DM Sans';margin-top:10px}.chart{height:210px;display:flex;align-items:end;gap:8px;padding:24px}.chart i{flex:1;border-radius:5px 5px 0 0;background:linear-gradient(#8d7bf0,#4d19b1);opacity:.82}.flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:12px;align-items:center;margin-top:55px}.flow-card{padding:22px;text-align:center}.flow-card b{display:block;font:500 14px 'DM Sans'}.flow-card small{color:#818089;font-size:9px}.arrow{color:var(--teal)}
+    .process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:58px}.phase{position:relative;padding:30px 25px 34px;border-top:1px solid var(--line)}.phase:before{content:"";position:absolute;top:-4px;left:0;width:8px;height:8px;border-radius:50%;background:var(--teal);box-shadow:0 0 18px var(--teal)}.phase strong{font:500 12px 'DM Sans';color:#777680}.phase h3{font:500 19px 'DM Sans';margin:28px 0 10px}.phase p{font-size:13px;line-height:1.65;color:#96959d;margin:0}.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px;align-items:center}.about-number{aspect-ratio:1;border-radius:50%;display:grid;place-items:center;text-align:center;background:radial-gradient(circle,rgba(111,90,220,.2),transparent 68%);border:1px solid rgba(255,255,255,.1)}.about-number strong{display:block;font:400 clamp(80px,12vw,160px)/.8 'DM Sans';letter-spacing:-.08em}.about-number span{color:#aaa9b0;font-size:12px}.about-copy h2{font:390 clamp(42px,5vw,70px)/1 'DM Sans';letter-spacing:-.055em;margin:22px 0 28px}.about-copy p{color:#aaa9b0;font-size:17px;line-height:1.8}.values{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:32px}.value{padding:18px;border:1px solid var(--line);border-radius:14px;font-size:12px;color:#c8c7cc}.faq-list{max-width:900px;margin:56px auto 0;border-top:1px solid var(--line)}details{border-bottom:1px solid var(--line)}summary{cursor:pointer;list-style:none;padding:25px 0;display:flex;justify-content:space-between;gap:20px;font:500 17px 'DM Sans'}summary::-webkit-details-marker{display:none}summary:after{content:"+";color:var(--teal);font-size:22px}details[open] summary:after{content:"−"}details p{color:#9d9ca4;line-height:1.7;margin:0;padding:0 40px 24px 0}.contact{padding:130px 48px}.contact-box{width:min(1240px,100%);margin:auto;padding:80px;border:1px solid var(--line);border-radius:32px;text-align:center;background:radial-gradient(circle at 50% 120%,rgba(111,90,220,.28),transparent 55%),rgba(255,255,255,.02)}.contact-box h2{font:390 clamp(48px,6vw,86px)/.95 'DM Sans';letter-spacing:-.065em;max-width:900px;margin:20px auto}.contact-box p{color:#aaa9b0;max-width:600px;margin:0 auto 32px;line-height:1.7}.contact-box .buttons{justify-content:center}footer{border-top:1px solid var(--line);padding:34px 48px}.footer-inner{width:min(1240px,100%);margin:auto;display:flex;align-items:center;justify-content:space-between;color:#85848c;font-size:12px}.footer-name{font:500 18px 'DM Sans';color:#dddce1}.footer-links{display:flex;gap:24px}
+    [data-enter]{opacity:0;transform:translateY(20px)}[data-reveal]{opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease),transform .8s var(--ease)}[data-reveal].seen{opacity:1;transform:none}
+    @media(max-width:1300px){header{height:84px;padding:16px 20px}.mark{width:46px;height:46px}nav,.actions{display:none}.menu{display:block;margin-left:auto}.mobile-nav{position:absolute;top:76px;left:20px;right:20px;padding:14px;border-radius:20px;flex-direction:column;align-items:stretch;background:rgba(20,18,27,.94);border:1px solid var(--line);backdrop-filter:blur(18px)}.mobile-nav.open{display:flex}.mobile-nav a{padding:13px 14px;color:#d6d4db}.hero{display:flex;flex-direction:column;align-items:stretch;padding:8vh 20px 120px;min-height:auto}.copy{padding:0;text-align:center}.eyebrow{justify-content:center}h1{font-size:clamp(48px,12vw,76px);margin:auto}.sub{margin:24px auto 28px;max-width:620px}.buttons,.stats{justify-content:center}.visual{min-height:620px;margin:25px 0 0}.media{width:min(120vw,720px)}.card{width:min(310px,82vw)}.card-a{left:0;top:14%}.card-b{right:0;bottom:12%}.logos{bottom:34px;width:100%;justify-content:center;flex-wrap:wrap;row-gap:12px;white-space:normal}}
+    @media(max-width:900px){.section,.contact{padding:88px 22px}.section-head,.about-grid{grid-template-columns:1fr;gap:24px}.services{grid-template-columns:repeat(2,1fr)}.project,.project:nth-child(even){grid-template-columns:1fr}.project:nth-child(even) .project-copy{order:0}.project-copy{padding:35px}.process-grid{grid-template-columns:repeat(2,1fr)}.about-number{width:min(360px,80vw);margin:auto}.contact-box{padding:60px 25px}.footer-inner{flex-direction:column;gap:20px;text-align:center}}
+    @media(max-width:560px){.hero{padding-top:5vh}.word{font-size:19px}h1{font-size:clamp(43px,13vw,62px)}.sub{font-size:15px}.buttons{flex-direction:column;align-items:stretch}.btn{width:100%}.stats{margin-top:32px}.stat{padding:0 14px}.stat strong{font-size:23px}.stat small{font-size:9px}.visual{min-height:500px}.card{padding:13px;grid-template-columns:43px 1fr}.icon{width:43px;height:43px}.card h2{font-size:12px}.card-a{top:10%}.card-b{bottom:8%}.logos{gap:20px;font-size:11px}.section{padding:74px 18px}.services{grid-template-columns:1fr}.service{min-height:210px}.project{min-height:0}.project-copy{padding:30px 24px}.mock{min-height:370px;margin:12px}.metric-row{grid-template-columns:1fr}.metric:nth-child(n+2){display:none}.chart{height:190px}.flow{grid-template-columns:1fr}.arrow{transform:rotate(90deg)}.process-grid{grid-template-columns:1fr}.values{grid-template-columns:1fr}.contact{padding:70px 18px}.contact-box{padding:50px 20px}footer{padding:30px 18px}.footer-links{flex-wrap:wrap;justify-content:center}}
+    @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}[data-enter],[data-reveal]{opacity:1;transform:none}.media video{display:none}.media img{display:block}}
+  </style>
 </head>
-<body class="bg-bg font-body text-tx antialiased">
-
-<!-- ============ HEADER ============ -->
-<header id="top" class="fixed inset-x-0 top-0 z-50 border-b border-transparent text-white transition-all duration-300" style="padding-top:env(safe-area-inset-top,0px)">
-  <div class="mx-auto flex max-w-6xl items-center justify-between gap-6 px-5 py-3">
-    <div class="flex items-center gap-8">
-      <a href="#inicio" class="flex items-center gap-2.5 font-head text-base font-bold"><img src="img/logo.png" alt="" class="h-8 w-8 rounded-full ring-1 ring-white/25">Elite Softwares</a>
-      <nav class="hidden items-center gap-6 text-sm text-white/70 md:flex" aria-label="Principal">
-        <a class="transition-colors duration-300 hover:text-white" href="#solucoes">Soluções</a>
-        <a class="transition-colors duration-300 hover:text-white" href="#como">Como funciona</a>
-        <a class="transition-colors duration-300 hover:text-white" href="#quem">Quem somos</a>
-        <a class="transition-colors duration-300 hover:text-white" href="#faq">FAQ</a>
-      </nav>
-    </div>
-    <a data-wa href="#" class="btn hidden md:inline-flex">Falar no WhatsApp</a>
-    <button id="burger" class="rounded-lg p-2 md:hidden" aria-label="Abrir menu" aria-expanded="false" aria-controls="mmenu"><i data-i="menu" class="h-6 w-6"></i></button>
+<body>
+  <div class="shell">
+    <div class="orb" aria-hidden="true"></div>
+    <header>
+      <a class="brand" href="#inicio" data-enter><span class="word">ELITE <strong>SOFTWARES</strong><sup>BR</sup></span></a>
+      <nav aria-label="Navegação principal" data-enter><a href="#inicio">Início</a><a href="#solucoes">Soluções</a><a href="#portfolio">Portfólio</a><a href="#processo">Processo</a><a href="#sobre">Quem somos</a></nav>
+      <div class="actions" data-enter><a href="https://www.instagram.com/elite.softwares/" target="_blank" rel="noopener">Instagram</a><a class="nav-cta glass" data-wa href="#">Falar com a Elite</a></div>
+      <button class="menu glass" aria-label="Abrir menu" aria-expanded="false"><span></span></button>
+      <div class="mobile-nav" aria-label="Menu móvel"><a href="#inicio">Início</a><a href="#solucoes">Soluções</a><a href="#portfolio">Portfólio</a><a href="#processo">Processo</a><a href="#sobre">Quem somos</a><a data-wa href="#">Falar no WhatsApp</a></div>
+    </header>
+    <main class="hero" id="inicio">
+      <section class="copy">
+        <div class="eyebrow" data-enter>Software feito para a sua operação</div>
+        <h1 aria-label="Menos processo manual. Mais empresa em movimento.">
+          <span class="line"><span data-enter>Menos processo</span></span><span class="line"><span data-enter>manual. Mais</span></span><span class="line"><span data-enter>empresa em movimento.</span></span>
+        </h1>
+        <p class="sub" data-enter>A Elite entende o que está consumindo tempo e dinheiro, conecta os seus processos e constrói o sistema que resolve — sob medida, sem enrolação.</p>
+        <div class="buttons" data-enter><a class="btn btn-primary" data-wa href="#">Falar com a Elite <span>↗</span></a><a class="btn btn-secondary" href="https://www.instagram.com/elite.softwares/" target="_blank" rel="noopener">Conhecer a empresa</a></div>
+        <div class="stats"><div class="stat" data-enter><strong>3 sócios</strong><small>presentes em cada projeto</small></div><div class="stat" data-enter><strong>100%</strong><small>desenvolvido sob medida</small></div><div class="stat" data-enter><strong>Direto</strong><small>sem camadas de atendimento</small></div></div>
+      </section>
+      <section class="visual" aria-label="Tecnologia e dados em camadas">
+        <div class="media" data-enter><video autoplay muted loop playsinline poster="https://d2ol7oe51mr4n9.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/782a4a52-4c1e-4471-bb0c-aa232927f4a6.webp"><source src="https://d2ol7oe51mr4n9.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/435a4fe7-e43b-4e7c-af78-0be083e73569.mp4" type="video/mp4"></video><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/782a4a52-4c1e-4471-bb0c-aa232927f4a6.webp" alt="Camadas digitais luminosas em perspectiva"></div>
+        <article class="card card-a glass" data-enter><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="5" cy="12" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="19" cy="18" r="2"/><path d="m7 11 10-4M7 13l10 4"/></svg></div><div><small>Automação</small><h2>Rotinas integradas, sem retrabalho e sem dados duplicados.</h2></div></article>
+        <article class="card card-b glass" data-enter><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19V9l8-5 8 5v10"/><path d="M8 19v-5h8v5M3 19h18"/></svg></div><div><small>Sob medida</small><h2>Um sistema claro, construído em torno do jeito que sua empresa trabalha.</h2></div></article>
+      </section>
+    </main>
+    <div class="logos" data-enter><b>DIAGNÓSTICO</b><b>INTEGRAÇÕES</b><span>automação</span><span>SUPORTE</span></div>
   </div>
-  <div id="mmenu" class="hidden border-t border-white/10 bg-[#0a0a0a]/95 px-5 pb-5 pt-2 backdrop-blur-md md:hidden">
-    <a class="block py-2.5" href="#solucoes">Soluções</a><a class="block py-2.5" href="#como">Como funciona</a>
-    <a class="block py-2.5" href="#quem">Quem somos</a><a class="block py-2.5" href="#faq">FAQ</a>
-    <a data-wa href="#" class="btn mt-3 flex w-full">Falar no WhatsApp</a>
-  </div>
-</header>
 
-<main>
-<!-- ============ HERO (imagem = chuva de código) ============ -->
-<section id="inicio" class="relative flex min-h-[92vh] items-center justify-center overflow-hidden bg-[#0a0a0a] px-5 pb-16 pt-28 text-center text-white">
-  <canvas id="rain" class="absolute inset-0 h-full w-full" aria-hidden="true"></canvas>
-  <div class="hero-shade absolute inset-0" aria-hidden="true"></div>
-  <div class="relative mx-auto max-w-3xl">
-    <p class="chip"><span class="dot"></span>consultoria + software sob medida</p>
-    <h1 class="font-mono text-[1.65rem] font-bold leading-snug sm:text-4xl lg:text-[2.7rem]">
-      <span class="sr-only">Seu time não deveria passar o dia copiando dados.</span>
-      <span id="typed" aria-hidden="true"></span><span class="caret" aria-hidden="true"></span>
-      <noscript>Seu time não deveria passar o dia copiando dados.</noscript>
-    </h1>
-    <div id="heroSub">
-      <p class="mx-auto mt-5 max-w-xl text-base leading-relaxed text-white/75 sm:text-lg">A gente descobre o que está custando tempo e dinheiro na sua operação e constrói o sistema que resolve. Sob medida, sem enrolação.</p>
-      <div class="mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row">
-        <a data-wa href="#" class="btn btn-md"><i data-i="wa" class="h-4 w-4"></i>Falar no WhatsApp</a>
-        <a href="#solucoes" class="btn-ghost btn-md">Ver o que fazemos</a>
+  <div class="content">
+    <section class="section" id="solucoes">
+      <div class="wrap">
+        <div class="kicker" data-reveal>O que fazemos</div>
+        <div class="section-head" data-reveal><h2>Tecnologia que trabalha do seu jeito.</h2><p>Entramos na rotina, entendemos os gargalos e transformamos tarefas dispersas em um fluxo simples, conectado e visível.</p></div>
+        <div class="services" data-reveal>
+          <article class="service"><span class="service-no">01</span><h3>Diagnóstico de processos</h3><p>Mapeamos a operação e identificamos onde tempo, informação e dinheiro estão escapando.</p></article>
+          <article class="service"><span class="service-no">02</span><h3>Sistemas sob medida</h3><p>Desenvolvemos ferramentas alinhadas às regras, pessoas e objetivos reais da empresa.</p></article>
+          <article class="service"><span class="service-no">03</span><h3>Automação de rotinas</h3><p>O que é repetitivo passa a acontecer sozinho, no momento certo e com menos erro.</p></article>
+          <article class="service"><span class="service-no">04</span><h3>Integrações</h3><p>Conectamos os sistemas que você já usa para a informação circular sem cópia manual.</p></article>
+          <article class="service"><span class="service-no">05</span><h3>Painéis e relatórios</h3><p>Transformamos dados em uma visão clara da operação para decisões mais rápidas.</p></article>
+          <article class="service"><span class="service-no">06</span><h3>Suporte contínuo</h3><p>Acompanhamos a evolução da empresa e adaptamos o sistema conforme a rotina muda.</p></article>
+        </div>
       </div>
-    </div>
+    </section>
+
+    <section class="section portfolio" id="portfolio">
+      <div class="wrap">
+        <div class="kicker" data-reveal>Portfólio de possibilidades</div>
+        <div class="section-head" data-reveal><h2>Soluções que podemos construir.</h2><p>Exemplos visuais de projetos que a Elite desenvolve para organizar, automatizar e dar visibilidade a operações reais.</p></div>
+        <div class="projects">
+          <article class="project" data-reveal>
+            <div class="project-copy"><span class="project-tag">Gestão operacional</span><h3>O controle da empresa em uma única tela.</h3><p>Painéis centralizados para acompanhar tarefas, indicadores, prazos e exceções sem depender de planilhas espalhadas.</p><div class="chips"><span>Dashboard</span><span>Indicadores</span><span>Alertas</span></div></div>
+            <div class="mock" aria-label="Exemplo ilustrativo de dashboard"><div class="mock-top"><i></i><i></i><i></i></div><div class="mock-body"><div class="metric-row"><div class="metric"><small>FLUXOS ATIVOS</small><strong>24</strong></div><div class="metric"><small>CONCLUÍDOS</small><strong>86%</strong></div><div class="metric"><small>PENDÊNCIAS</small><strong>07</strong></div></div><div class="chart"><i style="height:38%"></i><i style="height:62%"></i><i style="height:48%"></i><i style="height:78%"></i><i style="height:58%"></i><i style="height:88%"></i><i style="height:73%"></i><i style="height:96%"></i></div></div></div>
+          </article>
+          <article class="project" data-reveal>
+            <div class="project-copy"><span class="project-tag">Automação e integração</span><h3>Informação fluindo sem trabalho dobrado.</h3><p>Conexões entre atendimento, financeiro e operação para que cada dado seja registrado uma vez e chegue onde precisa.</p><div class="chips"><span>APIs</span><span>Automação</span><span>Notificações</span></div></div>
+            <div class="mock" aria-label="Exemplo ilustrativo de fluxo automatizado"><div class="mock-top"><i></i><i></i><i></i></div><div class="mock-body"><div class="flow"><div class="flow-card"><b>Entrada</b><small>novo pedido</small></div><span class="arrow">→</span><div class="flow-card"><b>Validação</b><small>regras automáticas</small></div><span class="arrow">→</span><div class="flow-card"><b>Concluído</b><small>equipe notificada</small></div></div></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="processo">
+      <div class="wrap"><div class="kicker" data-reveal>Como trabalhamos</div><div class="section-head" data-reveal><h2>Do problema ao sistema, sem caixa-preta.</h2><p>Você acompanha cada etapa, valida cedo e sabe exatamente o que está sendo construído.</p></div>
+        <div class="process-grid" data-reveal><article class="phase"><strong>01</strong><h3>Conversa</h3><p>Você conta o que está travando a operação e o que espera melhorar.</p></article><article class="phase"><strong>02</strong><h3>Diagnóstico</h3><p>Mapeamos a rotina e definimos o que realmente vale automatizar.</p></article><article class="phase"><strong>03</strong><h3>Construção</h3><p>Desenvolvemos em etapas curtas, com validações ao longo do caminho.</p></article><article class="phase"><strong>04</strong><h3>Evolução</h3><p>Entregamos, acompanhamos o uso e ajustamos conforme a empresa cresce.</p></article></div>
+      </div>
+    </section>
+
+    <section class="section portfolio" id="sobre">
+      <div class="wrap about-grid"><div class="about-number" data-reveal><div><strong>3</strong><span>sócios por trás de cada projeto</span></div></div><div class="about-copy" data-reveal><div class="kicker">Quem é a Elite</div><h2>Três amigos. Um jeito direto de resolver problemas.</h2><p>A Elite Softwares nasceu quando percebemos que muitas empresas ainda perdem tempo e dinheiro com processos que poderiam ser mais simples. Juntamos nossas habilidades para criar tecnologia próxima, útil e feita sob medida.</p><div class="values"><div class="value">Clareza em cada etapa</div><div class="value">Contato direto com quem faz</div><div class="value">Solução antes da complexidade</div><div class="value">Parceria depois da entrega</div></div></div></div>
+    </section>
+
+    <section class="section" id="faq"><div class="wrap"><div class="kicker" data-reveal>Perguntas frequentes</div><div class="section-head" data-reveal><h2>Antes de começar.</h2><p>Respostas diretas para as dúvidas que normalmente aparecem na primeira conversa.</p></div><div class="faq-list" data-reveal>
+      <details><summary>Quanto custa e quanto tempo leva?</summary><p>Depende do tamanho do problema e da solução. Depois da primeira conversa e do diagnóstico, apresentamos uma estimativa clara de prazo e investimento.</p></details>
+      <details><summary>Preciso trocar os sistemas que já uso?</summary><p>Na maioria dos casos, não. Sempre que fizer sentido, conectamos as ferramentas existentes e substituímos apenas o que realmente limita a operação.</p></details>
+      <details><summary>A Elite atende empresas pequenas?</summary><p>Sim. Podemos começar pelo processo que mais pesa hoje e evoluir o sistema junto com o crescimento da empresa.</p></details>
+      <details><summary>E depois que o sistema fica pronto?</summary><p>Continuamos por perto com suporte, correções e melhorias para que a solução acompanhe as mudanças da operação.</p></details>
+    </div></div></section>
+
+    <section class="contact" id="contato"><div class="contact-box" data-reveal><div class="kicker" style="justify-content:center">Vamos conversar</div><h2>Qual processo está segurando a sua empresa?</h2><p>Conte para a Elite o que mais consome tempo hoje. A primeira conversa é direta, sem formulário e sem compromisso.</p><div class="buttons"><a class="btn btn-primary" data-wa href="#">Falar no WhatsApp ↗</a><a class="btn btn-secondary" href="https://www.instagram.com/elite.softwares/" target="_blank" rel="noopener">@elite.softwares</a></div></div></section>
   </div>
-</section>
 
-<!-- ============ PROBLEMA ============ -->
-<section class="mx-auto max-w-5xl px-5 py-20">
-  <p class="tag">// problema</p>
-    <h2 class="font-head text-2xl font-bold sm:text-3xl lg:text-4xl">O que a gente costuma encontrar nas empresas</h2>
-  <div class="mt-10 border-t border-line">
-    <div class="hidden gap-8 py-3 font-mono text-xs uppercase tracking-widest text-mute md:grid md:grid-cols-2"><span>Como está hoje</span><span class="text-ok">Como fica</span></div>
-    <div class="row md:grid-cols-2"><p>A mesma informação digitada em três lugares.</p><p>Um cadastro só, que alimenta o resto.</p></div>
-    <div class="row md:grid-cols-2"><p>Uma planilha que só uma pessoa entende.</p><p>Um sistema com regras claras, que qualquer um usa.</p></div>
-    <div class="row md:grid-cols-2"><p>Conferência manual que atrasa e erra.</p><p>Conferência automática, com alerta só do que foge do normal.</p></div>
-    <div class="row md:grid-cols-2"><p>Relatório que chega depois da decisão.</p><p>Painel sempre atualizado, sem esperar ninguém montar.</p></div>
-  </div>
-</section>
-
-<!-- ============ SOLUÇÕES ============ -->
-<section id="solucoes" class="border-y border-line bg-bg2 py-20">
-  <div class="mx-auto max-w-5xl px-5">
-    <p class="tag">// soluções</p>
-    <h2 class="font-head text-2xl font-bold sm:text-3xl lg:text-4xl">Do diagnóstico ao suporte</h2>
-    <p class="mt-3 max-w-xl text-mute">Você não compra um software de prateleira. Recebe uma solução desenhada para o jeito que a sua empresa trabalha.</p>
-    <dl class="mt-10 border-t border-line">
-      <div class="sol"><dt>Diagnóstico de processos</dt><dd>Acompanhamos a rotina de perto e mostramos onde o dinheiro está escapando.</dd></div>
-      <div class="sol"><dt>Sistemas sob medida</dt><dd>Feitos para o seu jeito de trabalhar. Nada de função que ninguém usa.</dd></div>
-      <div class="sol"><dt>Automação de rotinas</dt><dd>O que é repetitivo passa a rodar sozinho, no horário certo e sem erro.</dd></div>
-      <div class="sol"><dt>Integrações</dt><dd>Ligamos os sistemas que você já usa para os dados pararem de ser copiados na mão.</dd></div>
-      <div class="sol"><dt>Painéis e relatórios</dt><dd>Os números que você precisa para decidir, na tela e atualizados.</dd></div>
-      <div class="sol"><dt>Suporte contínuo</dt><dd>Depois da entrega, ajustamos o sistema conforme a empresa muda.</dd></div>
-    </dl>
-  </div>
-</section>
-
-<!-- ============ COMO FUNCIONA ============ -->
-<section id="como" class="mx-auto max-w-5xl px-5 py-20">
-  <p class="tag">// como começar</p>
-    <h2 class="font-head text-2xl font-bold sm:text-3xl lg:text-4xl">Como começar</h2>
-  <ol class="mt-10 grid gap-5 md:grid-cols-3">
-    <li class="step"><p class="font-mono text-sm text-ok">01</p><h3>Conversa no WhatsApp</h3><p>Você conta o que está pesando na operação. Sem formulário e sem compromisso.</p></li>
-    <li class="step"><p class="font-mono text-sm text-ok">02</p><h3>Diagnóstico</h3><p>Entendemos a rotina e dizemos com franqueza o que vale automatizar e o que não vale.</p></li>
-    <li class="step"><p class="font-mono text-sm text-ok">03</p><h3>Proposta e construção</h3><p>Apresentamos prazo e valor. Aprovado, construímos junto com você, em etapas.</p></li>
-  </ol>
-</section>
-
-<!-- ============ QUEM SOMOS ============ -->
-<section id="quem" class="border-y border-line bg-bg2 py-20">
-  <div class="mx-auto max-w-3xl px-5">
-    <p class="tag">// quem somos</p>
-    <h2 class="font-head text-2xl font-bold sm:text-3xl lg:text-4xl">Três amigos, um jeito de resolver problema</h2>
-    <p class="mt-5 text-lg leading-relaxed text-mute">A Elite nasceu quando três amigos perceberam que muita empresa perde tempo e dinheiro com coisa que ainda é feita na mão. Cada um com a sua habilidade, decidimos juntar o melhor de nós para automatizar isso.</p>
-    <p class="mt-4 text-lg leading-relaxed text-mute">O resultado é o que a gente promete: menos erro, mais tempo e mais lucro para quem confia o processo a nós.</p>
-  </div>
-</section>
-
-<!-- ============ FAQ ============ -->
-<section id="faq" class="mx-auto max-w-3xl px-5 py-20">
-  <p class="tag">// faq</p>
-    <h2 class="font-head text-2xl font-bold sm:text-3xl lg:text-4xl">Perguntas frequentes</h2>
-  <div class="mt-10 border-t border-line">
-    <details class="faq"><summary>Quanto custa e quanto tempo leva?<i data-i="plus" class="h-5 w-5"></i></summary><p>Depende do problema. Na primeira conversa entendemos o seu cenário e passamos uma estimativa de prazo e investimento.</p></details>
-    <details class="faq"><summary>Preciso trocar os sistemas que já uso?<i data-i="plus" class="h-5 w-5"></i></summary><p>Quase nunca. Sempre que dá, integramos o que você já tem e só trocamos o que realmente atrapalha.</p></details>
-    <details class="faq"><summary>A Elite atende empresa pequena?<i data-i="plus" class="h-5 w-5"></i></summary><p>Atende. Começamos pelo processo que mais pesa e crescemos junto, no seu ritmo.</p></details>
-    <details class="faq"><summary>E depois que o sistema fica pronto?<i data-i="plus" class="h-5 w-5"></i></summary><p>Continuamos por perto, com suporte e ajustes, para o sistema acompanhar as mudanças da sua operação.</p></details>
-  </div>
-</section>
-
-<!-- ============ CTA FINAL ============ -->
-<section id="contato" class="relative overflow-hidden bg-[#0a0a0a] px-5 py-20 text-center text-white">
-  <div class="cta-glow absolute inset-0" aria-hidden="true"></div>
-  <div class="relative mx-auto max-w-2xl">
-    <h2 class="font-head text-2xl font-bold sm:text-3xl lg:text-4xl">Conta pra gente o que está travando a sua operação.</h2>
-    <p class="mt-4 text-white/70">Chama no WhatsApp. Respondemos por lá e já começamos a entender o seu caso.</p>
-    <div class="mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row">
-      <a data-wa href="#" class="btn btn-md"><i data-i="wa" class="h-4 w-4"></i>Falar no WhatsApp</a>
-      <a href="https://www.instagram.com/elite.softwares/" target="_blank" rel="noopener" class="btn-ghost btn-md"><i data-i="ig" class="h-4 w-4"></i>@elite.softwares</a>
-    </div>
-  </div>
-</section>
-</main>
-
-<!-- ============ FOOTER ============ -->
-<footer class="bg-[#0a0a0a] py-10 text-white/60">
-  <div class="mx-auto flex max-w-6xl flex-col gap-6 border-t border-white/10 px-5 pt-10 text-sm md:flex-row md:items-center md:justify-between">
-    <a href="#inicio" class="flex items-center gap-2.5 font-head text-base font-bold text-white"><img src="img/logo.png" alt="" class="h-8 w-8 rounded-full">Elite Softwares</a>
-    <nav aria-label="Rodapé" class="flex flex-wrap gap-x-6 gap-y-2"><a class="hover:text-white" href="#solucoes">Soluções</a><a class="hover:text-white" href="#como">Como funciona</a><a class="hover:text-white" href="#quem">Quem somos</a><a class="hover:text-white" href="#faq">FAQ</a>
-      <a class="inline-flex items-center gap-1.5 hover:text-white" href="https://www.instagram.com/elite.softwares/" target="_blank" rel="noopener"><i data-i="ig" class="h-4 w-4"></i>Instagram</a></nav>
-    <p>© <span id="yr">2026</span> Elite Softwares</p>
-  </div>
-</footer>
-
-<a data-wa href="#" aria-label="Falar no WhatsApp" class="wa-float"><i data-i="wa" class="h-6 w-6"></i></a>
-
-<script src="js/main.js" defer></script>
+  <footer><div class="footer-inner"><a class="footer-name" href="#inicio">ELITE SOFTWARES</a><div class="footer-links"><a href="#solucoes">Soluções</a><a href="#portfolio">Portfólio</a><a href="#sobre">Quem somos</a><a href="#faq">FAQ</a></div><span>© <span id="year"></span> Elite Softwares</span></div></footer>
+  <script>
+    (()=>{const numbers=['5511953500101','5511983971489'],message='Olá! Vim pelo site da Elite Softwares e quero conversar sobre a minha operação.';document.querySelectorAll('[data-wa]').forEach(a=>{a.target='_blank';a.rel='noopener';const set=()=>a.href=`https://wa.me/${numbers[Math.floor(Math.random()*numbers.length)]}?text=${encodeURIComponent(message)}`;set();a.addEventListener('pointerdown',set)});const menu=document.querySelector('.menu'),mobile=document.querySelector('.mobile-nav');menu.addEventListener('click',()=>{const open=mobile.classList.toggle('open');menu.setAttribute('aria-expanded',open);menu.setAttribute('aria-label',open?'Fechar menu':'Abrir menu')});mobile.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{mobile.classList.remove('open');menu.setAttribute('aria-expanded','false')}));document.getElementById('year').textContent=new Date().getFullYear();const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;if(!reduce){[...document.querySelectorAll('[data-enter]')].forEach((el,i)=>el.animate([{opacity:0,transform:'translateY(22px)'},{opacity:1,transform:'translateY(0)'}],{duration:780,delay:80+i*75,easing:'cubic-bezier(.22,1,.36,1)',fill:'forwards'}));const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('seen');observer.unobserve(entry.target)}}),{threshold:.12});document.querySelectorAll('[data-reveal]').forEach(el=>observer.observe(el))}})();
+  </script>
 </body>
 </html>

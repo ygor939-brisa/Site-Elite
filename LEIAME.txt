@@ -1,4 +1,4 @@
-ELITE SOFTWARES – Landing page (Tailwind CSS (tema escuro com brilho verde no começo do arquivo)
+ELITE SOFTWARES – Landing page (Tailwind CSS via CDN + CSS próprio + JavaScript puro)
 
 COMO ABRIR
 Dê dois cliques em index.html (precisa de internet para o Tailwind e as fontes carregarem).
@@ -6,16 +6,19 @@ Para publicar, envie a pasta inteira para a sua hospedagem.
 
 ESTRUTURA
 index.html       conteúdo e seções
-css/custom.css   visual (cores no começo do arquivo; seção final "Tema escuro com brilho")
-js/main.js       WhatsApp aleatório, título digitado e chuva de código verde
+css/custom.css   visual (cores no começo do arquivo) e animações de entrada
+js/main.js       título digitado, chuva de números binários, contagem dos números, menu mobile e WhatsApp aleatório
 img/             logo e ícone da aba
 
 WHATSAPP ALEATÓRIO
 Todos os botões de WhatsApp sorteiam um dos dois números a cada clique.
-Para trocar os números ou a mensagem inicial: js/main.js, no começo (NUMBERS e MESSAGE).
+Para trocar números ou mensagem: js/main.js, começo do arquivo (NUMBERS e MESSAGE).
 
 TÍTULO DIGITADO
-Para trocar a frase: js/main.js (variável TITLE) e o texto escondido dentro do <h1> no index.html.
+Para trocar a frase: js/main.js (LINES) e o texto escondido dentro do <h1> no index.html.
+
+NÚMEROS DO TOPO (contagem animada)
+index.html, bloco class="stats": data-target (valor final), data-suffix (ex.: %) e o texto da legenda.
 
 PENDENTE
 - LinkedIn da empresa (quando existir, adicionar ao rodapé e ao fim da página).
